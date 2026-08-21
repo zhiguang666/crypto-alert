@@ -18,7 +18,7 @@ from datetime import datetime, timezone, timedelta
 # ---- 配置 ----
 COINS = ["BTCUSDT", "ETHUSDT", "SOLUSDT"]
 ALERT_24H = 50.0      # 24小时涨跌幅阈值 %
-ALERT_5M = 2.0        # 5分钟波动阈值 %
+ALERT_5M = 1.0        # 5分钟波动阈值 %
 COOLDOWN_MINUTES = 5  # 同一币种推送冷却（分钟）
 
 TOKEN = os.environ.get("PUSHPLUS_TOKEN", "").strip()
