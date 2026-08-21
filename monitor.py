@@ -11,6 +11,7 @@
 import json
 import os
 import time
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
@@ -39,7 +40,8 @@ def http_get(url: str) -> str:
 
 
 def fetch_tickers() -> list:
-    url = "https://data-api.binance.vision/api/v3/ticker/24hr?symbols=" + json.dumps(COINS)
+    symbols = urllib.parse.quote(json.dumps(COINS, separators=(",", ":")))
+    url = "https://data-api.binance.vision/api/v3/ticker/24hr?symbols=" + symbols
     return json.loads(http_get(url))
 
 
