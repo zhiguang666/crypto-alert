@@ -1,12 +1,12 @@
 {
   "last_price": {
-    "BTCUSDT": 86000.99,
-    "ETHUSDT": 2733.61,
-    "SOLUSDT": 116.5
+    "BTCUSDT": 86565.43,
+    "ETHUSDT": 2753.88,
+    "SOLUSDT": 118.28
   },
   "last_alert": {
     "ETHUSDT": 1790071840.4228418,
-    "SOLUSDT": 1790071840.4228418,
+    "SOLUSDT": 1790101238.4117558,
     "BTCUSDT": 1790071840.4228418
   }
 }
